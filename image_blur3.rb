@@ -9,7 +9,6 @@ class Image
     end
   end
 
-
   def blur (num)
     locations = []
     num.times do
@@ -32,7 +31,6 @@ class Image
   end
 end
 
-  
 
 image = Image.new([
   [0, 0, 0, 0, 0, 0, 0],
@@ -43,7 +41,10 @@ image = Image.new([
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 1, 0]
+
 ])
 image.output_image
 image.blur (3)
